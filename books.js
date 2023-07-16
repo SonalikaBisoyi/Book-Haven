@@ -1,4 +1,3 @@
-
 const categories = [
     {
       name: "Fiction",
@@ -12,25 +11,25 @@ const categories = [
         {
           title: "The Alchemist",
           price: "1",
-          image: "/images/fiction2.jpeg",
+          image: "./images/fiction2.jpeg",
           details: "Turning the envelope over, his hand trembling, Harry saw a purple wax seal bearing a coat of arms; a lion, an eagle, a badger and a snake surrounding a large letter 'H'..",
         },
         {
           title: "Yellowface",
           price: "1",
-          image: "/images/fiction3.jpeg",
+          image: "./images/fiction3.jpeg",
           details: "Harry Potter's summer has included the worst birthday ever, doomy warnings from a house-elf called Dobby, and rescue from the Dursleys by his friend Ron Weasley in a magical flying car! Back at Hogwarts School of Witchcraft and Wizardry for his second year, Harry hears strange whispers echo through empty corridors - and then the attacks start. Students are found as though turned to stone... Dobby's sinister predictions seem to be coming true..",
         },
         {
           title: "The Kite Runner",
           price: "1",
-          image: "/images/fiction4.jpeg",
+          image: "./images/fiction4.jpeg",
           details: "The Triwizard Tournament is to be held at Hogwarts. Only wizards who are over seventeen are allowed to enter - but that doesn't stop Harry dreaming that he will win the competition. Then at Hallowe'en, when the Goblet of Fire makes its selection, Harry is amazed to find his name is one of those that the magical cup picks out. He will face death-defying tasks, dragons and Dark wizards, but with the help of his best friends, Ron and Hermione, he might just make it through - alive!.",
         },
         {
           title: "The Book Thief",
           price: "1",
-          image: "/images/fiction5.jpeg",
+          image: "./images/fiction5.jpeg",
           details: "This Baker Street dozen by Sir Arthur Conan Doyle is all the evidence readers will need to understand why Sherlock Holmes is an enduring legend in detective fiction..",
         },
       ],
@@ -41,19 +40,19 @@ const categories = [
         {
           title: "Pride and Prejudice",
           price: "2.1",
-          image: "/images/JaneEyre.webp",
+          image: "./images/JaneEyre.webp",
           details: "Pride and Prejudice is an 1813 novel written by Jane Austen. The novel follows the character development of Elizabeth Bennet, the dynamic protagonist of the book who learns about the repercussions of hasty judgments and comes to appreciate the difference between superficial goodness and actual goodness.",
         },
         {
           title: "Jane Eyre",
           price: "2.2",
-          image: "/images/Pride_and_prejudice.webp",
+          image: "./images/Pride_and_prejudice.webp",
           details: "One of the most widely-read and enjoyed of all Victorian novels, and one of the greatest tales of a woman's struggle for dignity and love in a hard time.",
         },
         {
           title: "The Bell Jar",
           price: "2.3",
-          image: "/images/classic3.jpg",
+          image: "./images/classic3.jpg",
           details: "This Baker Street dozen by Sir Arthur Conan Doyle is all the evidence readers will need to understand why Sherlock Holmes is an enduring legend in detective fiction..",
         },
         {
@@ -65,7 +64,7 @@ const categories = [
         {
           title: "Psyche and Eros",
           price: "2.3",
-          image: "/images/classic5.jpg",
+          image: "./images/classic5.jpg",
           details: "This Baker Street dozen by Sir Arthur Conan Doyle is all the evidence readers will need to understand why Sherlock Holmes is an enduring legend in detective fiction..",
         },
        
@@ -78,25 +77,25 @@ const categories = [
         {
           title: "Daughter of the Pirate King",
           price: "3",
-          image: "/images/DaughterOfhePrirateKing.webp",
+          image: "./images/DaughterOfhePrirateKing.webp",
           details: "Seventeen-year-old Alosa, daughter of the feared Pirate King, is on a mission. She must retrieve an ancient hidden map, the key to a legendary treasure trove. The catch? Alosa needs to conceal her considerable combat skills and allow herself to be captured by her enemies, giving her the perfect opportunity to search their ship.",
         },
         {
           title: "Night Elves of Ardani",
           price: "3",
-          image: "/images/NightElvesOfArdani.webp",
+          image: "./images/NightElvesOfArdani.webp",
           details: "When she/'s taken prisoner by the enemies of her people, her elven captor is the only person standing between her and death at the hands of his bloodthirsty kin. ",
         },
         {
           title: "The Name of the Wind",
           price: "3",
-          image: "/images/TheNameOfTheWind.webp",
+          image: "./images/TheNameOfTheWind.webp",
           details: "So begins the tale of Kvothe - currently known as Kote, the unassuming innkeepter - from his childhood in a troupe of traveling players, through his years spent as a near-feral orphan in a crime-riddled city, to his daringly brazen yet successful bid to enter a difficult and dangerous school of magic. In these pages you will come to know Kvothe the notorious magician, the accomplished thief, the masterful musician, the dragon-slayer, the legend-hunter, the lover, the thief and the infamous assassin.",
         },
         {
           title: "Wings of Fire",
           price: "3",
-          image: "/images/WingsOfFire.webp",
+          image: "./images/WingsOfFire.webp",
           details: "Time to track down the real killer and clear my name.Because if I don/'t solve this murder fast, then I might just be facing a lifetime in a grim reaper's prison. Or worse, a lifetime of servitude to a vampire",
         },
        
@@ -496,6 +495,21 @@ const categories = [
   }
   
   // Add event listener to close the popup
+  document.getElementById("closePopup").addEventListener("click", function () {
+    closeBookDetails();
+  });
+  
+  function closeBookDetails() {
+    let popup = document.getElementById("bookDetailsPopup");
+    popup.style.display = "none";
+  }
+  
+  window.addEventListener("DOMContentLoaded", () => {
+    renderBooks();
+    filterBooks("all");
+  });
+  
+      // Add event listener to close the popup
   document.getElementById("closePopup").addEventListener("click", function () {
     closeBookDetails();
   });
