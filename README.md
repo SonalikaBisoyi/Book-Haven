@@ -39,7 +39,13 @@ This is a book store website project that showcases a virtual bookstore, allowin
 
 ## Contributing
 
-Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
+Contributors are :
+1. Akankshya Kar : `https://github.com/Akankshyakar48`
+2. Subhasmita Mohapatra : `https://github.com/Neha9178`
+3. Sriya Saloni Singh : `https://github.com/Sriya-Saloni-Singh`
+4. Sudeshna Mohanty : `https://github.com/sudu1010`
+5. Swati Elina : `https://github.com/Swati713`
+6. Sruti Pandey : `https://github.com/SrutiPandey`
 
 ## License
 
