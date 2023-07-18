@@ -31,8 +31,9 @@
   </div>
 </body>
 </html>
-<script>
+<script> 
     let submit = async() =>{
+        event.preventDefault();
         let username = document.getElementById("username").value;
         let password = document.getElementById("password").value;
         let errorMessage = document.getElementById("errormessage");
@@ -56,4 +57,4 @@
         window.location.href ="index.html";
     }
 }
-</script>
+</script> 
